@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario </title>
+</head>
+<body>
+
+    <h2 align="center"> Movacar Seguradora </h2>
+
+    <table width="800" align="center" bgcolor="silver">
+        <tr>
+            <td>
+                <fieldset>
+                    <legend> Cadastro Movacar </legend>
+                    <form action="enviar.php" method="post" name="cadastro">
+                        <table cellpadding="5" cellspacing="3" align="center">
+                            <tr>
+                                <td> <label> Usuario: </label> </td>
+                                <td><input type="usuario" id="usuario" name="usuario" size="20" maxlength="10"
+                                        placeholder="Digite Seu Usuario " required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Senha:</label></td>
+                                <td><input type="password" id="senha" name="senha" size="20" maxlength="11"
+                                        placeholder="Digite Sua Senha" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Email:</label></td>
+                                <td><input type="Email" id="mail" name="mail" size="20" maxlength="10"
+                                        placeholder="Digite Seu Email" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td> <label> Nome: </label> </td>
+                                <td><input type="text" id="nome" name="nome" size="20" maxlength="10"
+                                        placeholder="Digite Seu Nome " required /></td>
+                                </tr>
+
+                            <tr>
+                                <td><label>CPF:</label></td>
+                                <td><input type="number" id="cpf" name="cpf" size="20" maxlength="11"
+                                        placeholder="Digite Seu Cpf" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Data De Nacimento:</label></td>
+                                <td><input type="date" id="data_nasc" name="data_nasc" min="2000-01-01"
+                                        max="2050-08-10 " placeholder="Informe Sua Data De Nascimento" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Telefone:</label></td>
+                                <td><input type="number" id="Telefone" name="Telefone" size="20" maxlength="11"
+                                        placeholder="Digite Seu Telefone" required /></td>
+                            </tr>
+
+
+                            <tr>
+
+                                <td> <label>Sexo:</label> </td>
+                                <td>
+
+                                    <input type="radio" id="sexo" name="sexo" value="Masculino" required />
+                                    <label>Masculino</label>
+                                    <br />
+                                    <input type="radio" id="sexo" name="sexo" value="Feminino" required />
+                                    <label>Feminino</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td> <label>Envie Seu Documento:</label> </td>
+                                <td>
+
+                                    <input type="file" id="img" name="img" required />
+                                </td>
+                            </tr>
+
+
+
+                        </table>
+
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <legend> Cadastro Veiculo </legend>
+                        <table cellpadding="5" cellspacing="3" align="center">
+                            <tr>
+
+                                <td><label>Modelos De Veiculos:</label></td>
+                                <td><select id="modelo" name="modelo" required>
+                                    <option value="" selected="selected"> Selecione </option>
+                                    <optgroup label="Asfalto"></optgroup>
+                                    <option value="Sedã"> Sedã</option>
+                                    <option value="Esportivo"> Esportivo</option>
+                                    <option value="Crossover"> Crossover</option>
+                                    </optgroup>
+                                    <optgroup label="Morro"></optgroup>
+                                    <option value="Suv"> Suv</option>
+                                    <option value="Picapes"> Picapes</option>
+                                    <option value="Off Road"> Off Road</option>
+                                    </optgroup>
+                                </optgroup>
+                                <optgroup label="Motos"></optgroup>
+                                <option value="Carenada"> Carenada</option>
+                                <option value="Bigtrail"> Bigtrail</option>
+                                </optgroup>
+                            </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td><label>Marca Veiculos:</label></td>
+                                <td><select id="marca" name="marca" required>
+                                    <option value="" selected="selected"> Selecione </option>
+                                    <optgroup label="Luxo"></optgroup>
+                                    <option value="Porsche"> Porsche</option>
+                                    <option value="Ferrari"> Ferrari</option>
+                                    <option value="Bmw"> Bmw</option>
+                                    </optgroup>
+                                    <optgroup label="Popular"></optgroup>
+                                    <option value="Hyundai"> Hyundai</option>
+                                    <option value="Honda"> Honda</option>
+                                    <option value="Volkswagen"> Volkswagen</option>
+                                    <option value="Fiat"> Fiat</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Ano Do Veiculo:</label></td>
+                                <td><input type="number" id="date" name="date" min="2000" max="2050" placeholder="Ano do Veiculo" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Informe a Cor:</label></td>
+                                <td><input type="color" id="Cor" name="Cor" placeholder="Informe Sua Cor" required />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Informe O Nome Do Veiculo:</label></td>
+                                <td><input type="text" id="nome" name="nome" size="20" maxlength="30" placeholder="Nome do Veiculo" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Informe A Placa Do Veiculo:</label></td>
+                                <td><input type="text" id="nome" name="nome" size="20" maxlength="30" placeholder="Placa do Veiculo" required /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><label>Numero do Chassi:</label></td>
+                                <td><input type="number" id="chassi" name="chassi" size="20" maxlength="11"
+                                        placeholder="Informe O Numero Do Chassi" required /></td>
+                            </tr>
+
+                            <tr>
+
+                                <td> <label>Envie Foto Do Veiculo:</label> </td>
+                                <td>
+    
+                                    <input type="file" id="img" name="img" required />
+                                </td>
+                            </tr>
+
+                            <tr>
+                            <th colspan="2">
+                                <input type="submit" id="enviar" name="enviar" value="enviar dados" />
+                                <input type="reset" id="Cancelar" name="Cancelar" value="Cancelar Formulario" />
+                            </th>
+                        </tr>
+
+                        </table>
+                    </form>
+                </fieldset>
+        </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
